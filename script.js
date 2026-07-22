@@ -11,6 +11,7 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 const CATEGORIAS = [
   { id: 'liderazgo-gestion', nombre: 'Liderazgo y Gestión' },
   { id: 'equipos-cambio', nombre: 'Equipos y Cambio Organizacional' },
+  { id: 'recursos-humanos', nombre: 'Recursos Humanos' },
 ];
 
 /* ── Capacitaciones (programas — servicio informativo, sin venta online) ── */
@@ -81,6 +82,28 @@ const CAPACITACIONES = [
     beneficios: ['Modelos de cambio', 'Manejo de resistencia', 'Plan de comunicación'],
     presentacion: '8 hs · Online en vivo · Certificado',
   },
+  {
+    id: 'liquidacion-haberes',
+    nombre: 'Liquidación de Haberes',
+    categoria: 'recursos-humanos',
+    img: 'images/curso-liquidacion-haberes_1x1.png',
+    imgPos: 'center 38%',
+    badge: 'Nuevo',
+    desc: 'Aprendé el proceso completo de liquidación para distintos convenios: desde la recepción y el pasaje de novedades hasta el cálculo y la confección del recibo de sueldo.',
+    beneficios: ['Convenios colectivos y descuentos de ley', 'Recepción y pasaje de novedades', 'Bases de cálculo y recibos de sueldo'],
+    presentacion: '20 hs · 10 clases de 2 hs · Certificado',
+  },
+  {
+    id: 'gestion-recursos-humanos',
+    nombre: 'Gestión de Recursos Humanos',
+    categoria: 'recursos-humanos',
+    img: 'images/curso-recursos-humanos_1x1.png',
+    imgPos: 'center 38%',
+    badge: '2 módulos',
+    desc: 'Programa integral dividido en dos módulos: Soft, con comunicación, planillas, ausentismo, inducciones y altas; y Hard, enfocado en relaciones laborales y gremiales, liquidación de haberes y pasaje de novedades.',
+    beneficios: ['Soft: comunicación, planillas y ausentismo', 'Soft: inducción y alta de colaboradores', 'Hard: relaciones laborales y liquidación'],
+    presentacion: '20 hs · 2 módulos · Certificado',
+  },
 ];
 
 /* ── Servicios de consultoría (contacto) ──────────────────────── */
@@ -108,6 +131,13 @@ const SERVICIOS = [
     nombre: 'Transformación Cultural y Cambio',
     desc: 'Acompañamos a tu organización en procesos de cambio sostenidos en el tiempo.',
     icon: 'compass',
+  },
+  {
+    id: 'liquidacion-haberes-empresas',
+    nombre: 'Liquidación de Haberes para Empresas',
+    desc: 'Gestionamos la liquidación de sueldos para empresas con distintos convenios colectivos, con precisión y acompañamiento profesional.',
+    icon: 'payroll',
+    cta: 'Consultar servicio',
   },
 ];
 
@@ -204,6 +234,7 @@ const SERVICE_ICONS = {
   chart: '<path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-5"/>',
   building: '<path d="M3 21h18"/><path d="M5 21V5a2 2 0 012-2h10a2 2 0 012 2v16"/><path d="M9 9h1M14 9h1M9 13h1M14 13h1M9 17h1M14 17h1"/>',
   compass: '<circle cx="12" cy="12" r="10"/><path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36z"/>',
+  payroll: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h2M14 10h2M8 14h2M14 14h2M8 18h8"/>',
 };
 function initServicios() {
   const grid = document.getElementById('services-grid');
@@ -213,7 +244,7 @@ function initServicios() {
       <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${SERVICE_ICONS[s.icon] || ''}</svg></div>
       <h3>${esc(s.nombre)}</h3>
       <p>${esc(s.desc)}</p>
-      <a href="https://wa.me/5491127826588?text=${encodeURIComponent('Hola! Quiero consultar sobre ' + s.nombre)}" target="_blank" rel="noopener">Solicitar consultoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="https://wa.me/5491127826588?text=${encodeURIComponent('Hola! Quiero consultar sobre ' + s.nombre)}" target="_blank" rel="noopener">${esc(s.cta || 'Solicitar consultoría')} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>`).join('');
 }
 

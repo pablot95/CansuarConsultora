@@ -148,7 +148,7 @@ section { padding: var(--sp-8) 0; }
 .section-head p { color: var(--color-text-muted); margin-top: var(--sp-2); }
 
 /* ---- Servicios de consultoría (icon cards, sin foto — contacto) ---- */
-.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-3); }
+.services-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--sp-3); }
 .service-card { background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--sp-4); display: flex; flex-direction: column; gap: var(--sp-2); transition: box-shadow 450ms var(--transition), transform 450ms cubic-bezier(0.16, 1, 0.3, 1), border-color 450ms var(--transition); }
 .service-card:hover { box-shadow: var(--shadow-soft); transform: translateY(-8px); border-color: var(--color-primary); }
 .service-icon { width: 52px; height: 52px; border-radius: var(--radius-sm); background: var(--color-secondary-dim); display: flex; align-items: center; justify-content: center; margin-bottom: 6px; transition: transform 400ms cubic-bezier(0.34, 1.56, 0.64, 1), background 400ms var(--transition); }
@@ -247,6 +247,7 @@ footer { position: relative; background: var(--color-bg-deep); color: rgba(255,2
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+@media (max-width: 1200px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 1024px) { .training-grid, .services-grid { grid-template-columns: repeat(2, 1fr); } .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--sp-3); } }
 @media (max-width: 900px) { .editorial, .consult-banner { grid-template-columns: 1fr; } .editorial-img { order: -1; } .consult-banner-img { min-height: 220px; } .trust-grid { grid-template-columns: repeat(2, 1fr); } .testi-grid { grid-template-columns: 1fr; } }
 @media (max-width: 768px) {
