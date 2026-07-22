@@ -17,18 +17,6 @@
 </head>
 <body>
 
-  <!-- Overlay introductorio -->
-  <div id="intro-overlay" style="position:fixed;inset:0;z-index:9999;background:#33211A;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px;">
-    <div style="max-width:520px">
-      <svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#F0B79A" stroke-width="1.8" style="margin:0 auto 22px"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-      <h2 style="font-family:'Sora',sans-serif;font-size:1.6rem;margin-bottom:16px;color:#fff">Cansuar Consultora</h2>
-      <p style="font-size:0.95rem;line-height:1.7;color:rgba(255,255,255,0.8);margin-bottom:28px">
-        Un salmón cálido sobre tonos tierra, como una sala de reunión de confianza. Sora + Manrope para transmitir autoridad sin frialdad corporativa: capacitación y consultoría que se sienten cercanas.
-      </p>
-      <button id="intro-close-btn" style="border:none;background:#E1704F;color:#fff;padding:14px 34px;border-radius:12px;font-weight:700;font-size:0.95rem;cursor:pointer">Ver sitio web</button>
-    </div>
-  </div>
-
   <div class="site-topbar" id="site-topbar"><div class="topbar-track" id="topbar-track"></div></div>
 
   <header id="site-header">
@@ -289,12 +277,5 @@
     }
   </script>
   <script src="script.js"></script>
-  <script>
-    document.getElementById('intro-close-btn').addEventListener('click', () => {
-      document.getElementById('intro-overlay').style.display = 'none';
-      document.body.classList.remove('intro-open');
-    });
-    document.body.classList.add('intro-open');
-  </script>
 </body>
 </html>
