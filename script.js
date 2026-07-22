@@ -132,7 +132,7 @@ function crearCapacitacionCardHTML(p) {
         ${p.beneficios.map(b => `<li>${esc(b)}</li>`).join('')}
       </ul>
       <div class="training-card__cta">
-        <a class="btn btn-primary" href="https://wa.me/5491100000000?text=${wspMsg}" target="_blank" rel="noopener">Consultar este programa</a>
+        <a class="btn btn-primary" href="https://wa.me/5491127826588?text=${wspMsg}" target="_blank" rel="noopener">Consultar este programa</a>
       </div>
     </div>
   </article>`;
@@ -213,7 +213,7 @@ function initServicios() {
       <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${SERVICE_ICONS[s.icon] || ''}</svg></div>
       <h3>${esc(s.nombre)}</h3>
       <p>${esc(s.desc)}</p>
-      <a href="https://wa.me/5491100000000?text=${encodeURIComponent('Hola! Quiero consultar sobre ' + s.nombre)}" target="_blank" rel="noopener">Solicitar consultoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="https://wa.me/5491127826588?text=${encodeURIComponent('Hola! Quiero consultar sobre ' + s.nombre)}" target="_blank" rel="noopener">Solicitar consultoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>`).join('');
 }
 

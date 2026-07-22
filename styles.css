@@ -113,6 +113,7 @@ header#site-header { position: relative; z-index: 15; padding-top: calc(var(--he
 .hero .eyebrow { color: #F0B79A; }
 .hero h1 { color: #fff; margin-bottom: var(--sp-3); }
 .hero-desc { color: rgba(255,255,255,0.86); font-size: 1.1rem; margin-bottom: var(--sp-4); max-width: 48ch; }
+.hero-desc p + p { margin-top: var(--sp-2); }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 .hero-badges { display: flex; gap: var(--sp-4); margin-top: var(--sp-6); flex-wrap: wrap; }
 .hero-badge { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.85); }
