@@ -90,7 +90,7 @@ const CAPACITACIONES = [
     imgPos: 'center 38%',
     badge: 'Nuevo',
     desc: 'Aprendé el proceso completo de liquidación para distintos convenios: desde la recepción y el pasaje de novedades hasta el cálculo y la confección del recibo de sueldo.',
-    beneficios: ['Convenios colectivos y descuentos de ley', 'Recepción y pasaje de novedades', 'Bases de cálculo y recibos de sueldo'],
+    beneficios: ['Convenios y descuentos de ley', 'Recepción y pasaje de novedades', 'Bases de cálculo y recibos de sueldo'],
     presentacion: '20 hs · 10 clases de 2 hs · Certificado',
   },
   {
@@ -135,7 +135,7 @@ const SERVICIOS = [
   {
     id: 'liquidacion-haberes-empresas',
     nombre: 'Liquidación de Haberes para Empresas',
-    desc: 'Gestionamos la liquidación de sueldos para empresas con distintos convenios colectivos, con precisión y acompañamiento profesional.',
+    desc: 'Gestionamos la liquidación de sueldos para empresas con distintos convenios, con precisión y acompañamiento profesional.',
     icon: 'payroll',
     cta: 'Consultar servicio',
   },
