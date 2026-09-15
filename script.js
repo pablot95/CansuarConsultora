@@ -132,13 +132,6 @@ const SERVICIOS = [
     desc: 'Acompañamos a tu organización en procesos de cambio sostenidos en el tiempo.',
     icon: 'compass',
   },
-  {
-    id: 'liquidacion-haberes-empresas',
-    nombre: 'Liquidación de Haberes para Empresas',
-    desc: 'Gestionamos la liquidación de sueldos para empresas con distintos convenios, con precisión y acompañamiento profesional.',
-    icon: 'payroll',
-    cta: 'Consultar servicio',
-  },
 ];
 
 function getCategoria(id) { return CATEGORIAS.find(c => c.id === id); }
@@ -234,7 +227,6 @@ const SERVICE_ICONS = {
   chart: '<path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-5"/>',
   building: '<path d="M3 21h18"/><path d="M5 21V5a2 2 0 012-2h10a2 2 0 012 2v16"/><path d="M9 9h1M14 9h1M9 13h1M14 13h1M9 17h1M14 17h1"/>',
   compass: '<circle cx="12" cy="12" r="10"/><path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36z"/>',
-  payroll: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h2M14 10h2M8 14h2M14 14h2M8 18h8"/>',
 };
 function initServicios() {
   const grid = document.getElementById('services-grid');
